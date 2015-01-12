@@ -40,8 +40,9 @@ class Controller {
                 echo "<strong>Hobbies:</strong> ".$row["hobbies"]."<br>";
                 echo "<strong>Favorite Food:</strong> ".$row["favorite_food"]."<br>";
                 echo "<div id='resFriends'>CONTROLLO</div><br>";
-                if($id != 0)
+                if($id != 0){
                     echo "<button id='".$row['id_user']."' class='btn btn-primary btn-lg' name='add'>Aggiungi agli amici!</button><br><br>";
+                }
             }
         }else{
             echo "Errore nella query: ".mysqli_error();
